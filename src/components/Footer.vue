@@ -10,6 +10,12 @@
     >
       <v-card-text>
         <v-btn
+          elevation="2"
+          large
+        >Dejanos tus comentarios</v-btn>
+      </v-card-text>
+      <v-card-text>
+        <v-btn
           v-for="icon in icons"
           :key="icon"
           class="mx-4 white--text"
