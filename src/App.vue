@@ -27,3 +27,11 @@ export default {
   }),
 };
 </script>
+
+<style>
+
+.router-link{
+  color: #FFFF !important
+}
+
+</style>

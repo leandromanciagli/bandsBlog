@@ -40,7 +40,8 @@
 
     methods: {
       submit () {
-        this.$v.$touch()
+        localStorage.setItem("comentarios", this.comentarios);
+        console.log(localStorage.getItem("comentarios"));
       },
     },
   }

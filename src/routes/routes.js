@@ -5,6 +5,7 @@ import verUltimoDisco from '../components/verUltimoDisco.vue'
 const routes = [
     {
         path: "/",
+        name: "Home",
         component: Home
     },
     {
@@ -13,8 +14,9 @@ const routes = [
         component: Form
     },
     {
-        path: "/ultimoDisco/:id",
-        name: "ultimoDisco",
+        path: "/ultimoAlbum/:albumId",
+        name: "VerUltimoAlbum",
+        props: true,
         component: verUltimoDisco
     }
 ];

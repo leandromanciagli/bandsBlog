@@ -5,19 +5,18 @@
       dense
       dark
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-toolbar-title>  
+        <router-link class="router-link"
+          :to="{
+            name: 'Home'
+          }"
+        >
+          BandsBlog
+        </router-link>
 
-      <v-toolbar-title>BandsBlog</v-toolbar-title>
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
 
       <v-menu
         left
@@ -34,16 +33,43 @@
         </template>
 
         <v-list>
-          <v-list-item @click="() => {}">
-            <v-list-item-title><router-link to="/ultimoDisco/1">AC/DC</router-link></v-list-item-title>
+          <v-list-item>
+            <v-list-item-title> 
+              <router-link
+                :to="{
+                  name: 'VerUltimoAlbum',
+                  params: { albumId: '3bTNxJYk2bwdWBMtrjBxb0' }
+                }"
+              >
+                AC/DC
+              </router-link>
+            </v-list-item-title>
           </v-list-item>
 
-          <v-list-item @click="() => {}">
-            <v-list-item-title><router-link to="/ultimoDisco/2">Black Sabbath</router-link></v-list-item-title>
+          <v-list-item>
+            <v-list-item-title>
+              <router-link
+                :to="{
+                  name: 'VerUltimoAlbum',
+                  params: { albumId: '5WXL9YjbNd4GIqWc9mZOOq' }
+                }"
+              >
+                Black Sabbath
+              </router-link>
+            </v-list-item-title>
           </v-list-item>
 
-          <v-list-item @click="() => {}">
-            <v-list-item-title><router-link to="/ultimoDisco/3">Deep Purple</router-link></v-list-item-title>
+          <v-list-item>
+            <v-list-item-title>
+              <router-link
+                :to="{
+                  name: 'VerUltimoAlbum',
+                  params: { albumId: '2TFJQM2nlH4zIA5yuqKHQU' }
+                }"
+              >
+                Deep Purple
+              </router-link>
+            </v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
