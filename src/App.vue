@@ -2,7 +2,9 @@
   <v-app>
     <v-main>
       <Navbar/>
-      <Home/>
+      <div id="content">
+        <router-view></router-view>
+      </div>
       <Footer/>
     </v-main>
   </v-app>
@@ -10,14 +12,12 @@
 
 <script>
 import Navbar from './components/Navbar';
-import Home from './components/Home';
 import Footer from './components/Footer';
 
 export default {
   name: 'App',
 
   components: {
-    Home,
     Navbar,
     Footer,
   },

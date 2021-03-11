@@ -9,10 +9,11 @@
       class="indigo lighten-1 white--text text-center"
     >
       <v-card-text>
+        
         <v-btn
           elevation="2"
           large
-        >Dejanos tus comentarios</v-btn>
+        ><router-link to="/comentarios">Dejanos tus comentarios</router-link></v-btn>
       </v-card-text>
       <v-card-text>
         <v-btn
@@ -28,7 +29,7 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Blog informativo acerca de los últimos trabajos discográficos de las mejores bandas de rock de los años '70. Aquí encontrará las últimas novedades de sus bandas favoritas. Este trabajo es un proyecto de prueba con VueJs y Vuetify.
+        Blog informativo acerca de los últimos trabajos discográficos de las mejores bandas de hard rock de los años '70. Aquí encontrará las últimas novedades de sus bandas favoritas. Este trabajo es un proyecto de prueba con VueJs y Vuetify.
       </v-card-text>
 
       <v-divider></v-divider>

@@ -35,15 +35,15 @@
 
         <v-list>
           <v-list-item @click="() => {}">
-            <v-list-item-title>AC/DC</v-list-item-title>
+            <v-list-item-title><router-link to="/ultimoDisco/1">AC/DC</router-link></v-list-item-title>
           </v-list-item>
 
           <v-list-item @click="() => {}">
-            <v-list-item-title>Black Sabbath</v-list-item-title>
+            <v-list-item-title><router-link to="/ultimoDisco/2">Black Sabbath</router-link></v-list-item-title>
           </v-list-item>
 
           <v-list-item @click="() => {}">
-            <v-list-item-title>Deep Purple</v-list-item-title>
+            <v-list-item-title><router-link to="/ultimoDisco/3">Deep Purple</router-link></v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
