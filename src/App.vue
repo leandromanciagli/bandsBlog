@@ -1,34 +1,29 @@
 <template>
-  <div id="app">
-    <Navbar/>
-    <Home/>
-    <Footer/>
-  </div>
+  <v-app>
+    <v-main>
+      <Navbar/>
+      <Home/>
+      <Footer/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-
-import Navbar from './components/Navbar.vue'
-import Home from './components/Home.vue'
-import Footer from './components/Footer.vue'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
-  components: {
-    Navbar,
-    Home,
-    Footer,
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    Home,
+    Navbar,
+    Footer,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
